@@ -1,0 +1,81 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Food Nutrition Value
+    </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg">
+    <h1>Welcome!</h1>
+    <h2>Nutrition Value of Indian Food</h2>
+    <div class="form">
+        <form id="foodForm">
+            <!-- <label for="searchType">Search by:</label>
+            <select id="searchType" name="searchType">
+                <option value=""></option>
+                <option value="foodName"><span>Food Name</span></option>
+                <option value="foodType"><span>Food Type</span></option>
+            </select>
+            <br> -->
+
+            <div class="inputFoodName" >
+                <label for="foodName">Enter Food Name:</label>
+                <input type="text" id="foodName">
+            </div>
+            <!-- <div class="inputFoodType" style="display: none;">
+                <label for="foodType"><span>Select Food Type:</span></label>
+                <select id="type" placeholder="Food Type">
+                    <option value=""></option>
+                    <option value="Vegetarian">Veg</option>
+                    <option value="Non Vegetarian">Non-Veg</option>
+                </select>
+            </div> -->
+            <div class="input" id="search">
+                <input type="submit" value="Search">
+            </div>
+        </form>
+    </div>
+    <div id="property"></div>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded',()=> {
+        document.getElementById('foodForm').addEventListener('submit', (e) =>{
+            e.preventDefault()
+            const searchTypeSelect=document.getElementById('searchType')
+            const searchType = searchTypeSelect.value;
+            console.log(searchType);
+            const foodNameInput = document.getElementById('foodName');
+            const foodTypeInput = document.getElementById('type');
+
+
+            if (searchType === "foodName") {
+                foodNameInput.style.display = "block";
+                foodTypeInput.style.display = "none";
+                searchTypeSelect.style.display="none";
+                foodTypeInput.value="";
+                searchType.value="";
+                foodNameInput.focus();
+                
+            } 
+            else if (searchType === "foodType") {
+                foodTypeInput.style.display = "block";
+                foodNameInput.style.display = "none";
+                searchTypeSelect.style.display="none";
+                foodNameInput.value="";
+                searchType.value="";
+                foodTypeInput.focus();
+            }
+            else {
+                foodNameInput.style.display = "none";
+                foodTypeInput.style.display = "none";
+            }
+        })
+       })
+    </script> -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

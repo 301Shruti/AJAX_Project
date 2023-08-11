@@ -1,0 +1,104 @@
+/* *{align-items:center ;} */
+h1 ,h2{
+    color: white;
+    align-items: center;
+    margin: 1.5em;
+    padding:2%;
+}
+.bg{
+    background-image: url(./5.avif);
+    background-size: cover;
+    position: relative;
+    height: 40vmin;
+    width: 90%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vmin;
+    padding: 40px;
+    /* background: white; */
+    box-shadow: 10%;
+    margin: 40px;
+    background-color: rgba(197, 191, 191, 0.878);
+
+}
+.form .input{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    color: black;
+}
+.form .input input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+    /* background:#b8979b ; */
+}
+.form .input span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #722f37;
+}
+.input input:focus ~ span,
+.input input:valid ~ span{
+    color: black;
+    font-size:20px;
+    transform: translateY(-20px);
+}
+.form .input input[type="submit"]{
+    width: 100px;
+    background:rgb(0, 183, 255) ;
+    color:white ;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size:18px ;
+    justify-content: center
+}
+
+.property{
+    background-image: url(./3.jpg);
+    background-size: cover;
+    position: relative;
+    height: 40vmin;
+    width: 90%;
+}
+.property .box{
+    background: rgb(17, 15, 48);
+    color:white ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70vmin;
+    padding: 40px;
+    background: white;
+    box-shadow: 10%;
+    margin: 40px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
