@@ -1,16 +1,30 @@
-/* *{align-items:center ;} */
+html{
+ margin-top: -8vmin;
+ padding: 0;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: box;
+    font-family:ui-monospace;
+    text-overflow: ellipsis; 
+}
+body{
+    background: rgb(235, 232, 232);
+    width: 100%;
+}
 h1 ,h2{
     color: white;
     align-items: center;
-    margin: 1.5em;
+    margin: 1em;
     padding:2%;
 }
 .bg{
-    background-image: url(./5.avif);
+    /* background-image: url(./5.avif); */
     background-size: cover;
     position: relative;
-    height: 40vmin;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
 
 .form{
@@ -58,7 +72,7 @@ h1 ,h2{
     font-size:20px;
     transform: translateY(-20px);
 }
-.form .input input[type="submit"]{
+.form .input button{
     width: 100px;
     background:rgb(0, 183, 255) ;
     color:white ;
@@ -69,16 +83,18 @@ h1 ,h2{
     justify-content: center
 }
 
-.property{
-    background-image: url(./3.jpg);
-    background-size: cover;
+#property{
+    /* display: ; */
+    /* background-image: url(./3.jpg); */
+    /* background-size: cover; */
+
     position: relative;
-    height: 40vmin;
-    width: 90%;
+    height: 100%;
+    width: 100%;
 }
-.property .box{
+#property .box{
     background: rgb(17, 15, 48);
-    color:white ;
+    color:black ;
     display: flex;
     flex-direction: column;
     justify-content: center;

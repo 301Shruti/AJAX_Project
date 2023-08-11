@@ -9,37 +9,40 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="bg">
-    <h1>Welcome!</h1>
-    <h2>Nutrition Value of Indian Food</h2>
-    <div class="form">
-        <form id="foodForm">
-            <!-- <label for="searchType">Search by:</label>
-            <select id="searchType" name="searchType">
-                <option value=""></option>
-                <option value="foodName"><span>Food Name</span></option>
-                <option value="foodType"><span>Food Type</span></option>
-            </select>
-            <br> -->
-
-            <div class="inputFoodName" >
-                <label for="foodName">Enter Food Name:</label>
-                <input type="text" id="foodName">
-            </div>
-            <!-- <div class="inputFoodType" style="display: none;">
-                <label for="foodType"><span>Select Food Type:</span></label>
-                <select id="type" placeholder="Food Type">
+<body >
+    <div class="bg" style="background-image: url(./5.avif);">
+        <div><h1>Welcome!</h1>
+            <h2>Indian Food Nutrition Value</h2></div>
+        <div class="form">
+            <form id="foodForm">
+                <!-- <label for="searchType">Search by:</label>
+                <select id="searchType" name="searchType">
                     <option value=""></option>
-                    <option value="Vegetarian">Veg</option>
-                    <option value="Non Vegetarian">Non-Veg</option>
+                    <option value="foodName"><span>Food Name</span></option>
+                    <option value="foodType"><span>Food Type</span></option>
                 </select>
-            </div> -->
-            <div class="input" id="search">
-                <input type="submit" value="Search">
-            </div>
-        </form>
+                <br> -->
+    
+                <div class="inputFoodName" >
+                    <label for="foodName">Enter Food Name:</label>
+                    <input type="text" id="foodName">
+                </div>
+                <!-- <div class="inputFoodType" style="display: none;">
+                    <label for="foodType"><span>Select Food Type:</span></label>
+                    <select id="type" placeholder="Food Type">
+                        <option value=""></option>
+                        <option value="Vegetarian">Veg</option>
+                        <option value="Non Vegetarian">Non-Veg</option>
+                    </select>
+                </div> -->
+                <div class="input" id="search">
+                    <button>Search</button>
+                </div>
+            </form>
+        </div>
     </div>
-    <div id="property"></div>
+    <div id="property" style="display: none;"></div>
+    </div>
     <!-- <script>
         document.addEventListener('DOMContentLoaded',()=> {
         document.getElementById('foodForm').addEventListener('submit', (e) =>{
